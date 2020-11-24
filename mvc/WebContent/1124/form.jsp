@@ -5,5 +5,5 @@
 
 <form action="pro.do">
 	id : <input type="type" name="id"></br></br>
-		<input type="submit" value="전송"/>
+		 <input type="submit" value="전송"/>
 </form>
