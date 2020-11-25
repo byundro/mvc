@@ -16,8 +16,7 @@ public class MvcController extends HttpServlet {
     }
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
-	
+
 	System.out.println("controller 角青...");
 	/* ("夸没 ID" + uri); */
 	String uri = request.getRequestURI(); //夸没林家
@@ -32,8 +31,6 @@ public class MvcController extends HttpServlet {
 		view = "/1124/form.jsp";
 	}
 	request.getRequestDispatcher(view).forward(request, response);
-			
-	
-	}
+ }
 
 }
