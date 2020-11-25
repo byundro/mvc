@@ -13,7 +13,7 @@
 		<servlet-name>mvc</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
-		<servlet-mapping>
+	<servlet-mapping>
 		<servlet-name>test</servlet-name>
 		<url-pattern>*.nhn</url-pattern>
 	</servlet-mapping>
