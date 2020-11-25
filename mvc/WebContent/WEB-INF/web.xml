@@ -4,17 +4,13 @@
 	<servlet>
 		<servlet-name>mvc</servlet-name>
 		<servlet-class>mvc.controller.MvcController</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>test</servlet-name>
-		<servlet-class>mvc.controller.MvcController</servlet-class>
+		<init-param>
+			<param-name>action</param-name>
+			<param-value>D:\git\mvc\mvc\mvc\WebContent\WEB-INF\urimapping.properties</param-value>
+		</init-param>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>mvc</servlet-name>
 		<url-pattern>*.do</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>test</servlet-name>
-		<url-pattern>*.nhn</url-pattern>
 	</servlet-mapping>
 </web-app>
