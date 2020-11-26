@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>mvc</display-name>
-	<servlet>
-		<servlet-name>mvc</servlet-name>
+
+	<!-- MVC Controller Mapping -->
+	<servlet>		<!--↓ (설정하고 있는 태그라 아무것나 상관x, 여러개를 구별하기 위한 이름.) -->
+		<servlet-name> mvc</servlet-name>
 		<servlet-class>mvc.controller.MvcController</servlet-class>
+						<!--  패키지 이름을 포함한 풀네임. -->
 		<init-param>
 			<param-name>action</param-name>
-			<param-value>D:\git\mvc\mvc\mvc\WebContent\WEB-INF\urimapping.properties</param-value>
+			<param-value>D:\git\byundromvc\mvc\WebContent\WEB-INF\urimapping.properties</param-value>
+			<!-- init메서드에게  전달하는 파라미터 -->
 		</init-param>
 	</servlet>
+	
+
+	<!--  서블릿 주소만들기  -->
 	<servlet-mapping>
 		<servlet-name>mvc</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
+
+
+
+
+
+<!-- 
+	<servlet>		↓ 여러개의 컨트롤러를 만든 것.
+		<servlet-name> test</servlet-name>
+		<servlet-class>mvc.controller.TestController</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>test</servlet-name>
+		<url-pattern>*.nhn</url-pattern> 주소로 요청이 오면 test가 실행될것.
+	</servlet-mapping> 
+-->
+	
 </web-app>
