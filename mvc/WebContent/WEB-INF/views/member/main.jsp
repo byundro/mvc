@@ -68,7 +68,7 @@ function focusIt()
 
            <td rowspan="3" bgcolor="${value_c}" align="center">
              ${sessionScope.memId} 님이 <br>
-             방문하셨습니다
+             	방문하셨습니다
              <form  method="post" action="/mvc/member/logout.do">  
              <input type="submit"  value="로그아웃">
              <input type="button" value="회원정보변경" onclick="javascript:window.location='/mvc/member/modify.do'">
